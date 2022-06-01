@@ -4,21 +4,18 @@ These are the instructions for your <b>final exam</b>.
 <br><br>
 <s>READ CAREFULLY</s>
 <br><br>
-## Zombie Epidemic
+## Max Product Segment of Array
 
-For your final exam, we will simulate a simple zombie epidemic. The structure is
- very similar to the homework assignment. You are given a <b>city</b> which is a
- list of strings, and each element represents the state of the <b>location</b>
- within the city.
-<br>
-Each of the <b>locations</b> is one of the three states:
-<ol>
-  <li>"Zx" - the location is occupied by a Zombie horde, where 'x' stands
-  for the positive integer size of the horde. So, "Z2" means that there is a
-  zombie horde of size 2.</li>
-  <li>"H" - the location is occupied by a Human</li>
-  <li>"_" - the location is empty</li>
-</ol>
+For your final today, you will find the segment of an array with maximal product.
 
-### Examples of potential cities
-`["Z1", "Z2", "H", "_", "_", "H", "Z10"]`
+In the file `prod.py` you will see 3 functions: `prefix_prod`, `segment_prod`, `max_prod_segment`. Each function corresponds to a task you need to complete. For each next task **YOU MUST USE PREVIOUS FUNCTIONS**.
+
+### Task 1
+Complete the function `prefix_prod`, which takes `array` and returns an array of _prefix products_. Read the info in `prod.py` fo more
+### Task 2
+Complete the function `segment_prod`, which takes `array`, `left`, and `right` and returns the product of elements of `array` between and including indices  `left` and `right`. Assuming that `array` does not contain zeros, use `prefix_prod` for this. Note that to get an integer from division you should use `//` instead of `/`
+### Task 3
+Complete the function `max_prod_segment`, which takes `array` and returns maximal product of the segments of `array`.
+
+### Testing
+To run tests, run `python3 -m pytest -xv` from the folder of your final exam.

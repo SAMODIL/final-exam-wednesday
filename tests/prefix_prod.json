@@ -1,0 +1,29 @@
+[
+  {
+    "array" : [
+      13
+    ],
+    "expected" : [
+      13
+    ],
+    "purpose" : "Purpose: Check that array of size 1 generates a prefix sum array with 2 elements"
+  },
+  {
+    "array" : [
+      13, 2, -5, -44, 15, 9
+    ],
+    "expected" : [
+      13, 26, -130, 5720, 85800, 772200
+    ],
+    "purpose" : "Purpose: Check that array of size 7 is treated properly"
+  },
+  {
+    "array" : [
+      1, 1, 1, 1
+    ],
+    "expected" : [
+      1, 1, 1, 1
+    ],
+    "purpose" : "Purpose: "
+  }
+]
